@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react"
+import FetchData from "./FetchData"
 
 function App(){
   const [counter, setCounter] = useState(0)
@@ -26,7 +27,7 @@ function App(){
       <h2>Counter : {counter}</h2>
       <button onClick={()=> inc()}>Increament</button>
       <button onClick={()=>dec()}>Decreament</button>
-
+    <FetchData></FetchData>
     </div>
   )
 }
